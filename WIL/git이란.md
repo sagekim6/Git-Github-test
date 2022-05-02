@@ -49,3 +49,14 @@
   - working directory에서 뭔가 작업을 하고,
   - 작업한 파일들을 `git add` 해주고,
   - 커밋을 하면 staging area에 있던 파일들의 모습이 스냅샷(snapshot)처럼 이 repository에 저장된다
+
+## git이 보는 파일의 4가지 상태
+
+- git으로 관리되는 파일은 일종의 상태(status)를 가진다.
+
+1. Untracked 상태 : 추적되지 않고 있는 파일. 변동사항이 전혀 추적되고 있지 않는 상태.
+2. Tracked 상태 : 파일이 git에 의해 변동사항이 추적되고 있는 상태. tracked 상태는 다시 3가지 상태로 나뉜다.
+
+- Staged 상태 : 파일의 내용이 수정되고 staging area에 올라와있는 상태.
+- Unmodified 상태 : 현재 파일의 내용이 최신 커밋의 모습과 비교했을 때 전혀 바뀐 게 없는 상태. 변한 게 없는 상태.
+- Modified 상태 : 최신 커밋의 모습과 비교했을 때 조금이라도 바뀐 내용이 있는 상태.
