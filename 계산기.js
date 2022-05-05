@@ -8,4 +8,10 @@ function add(a, b) {
 function subtract(a, b) {
   return a - b;
 }
+
+// 곱셈(*)
+function multiply(a, b) {
+  return a * b;
+}
+
 // git/github를 연습해보기 위한 test 파일
