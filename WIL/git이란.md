@@ -97,3 +97,11 @@
 
 - 어떤 커밋 하나를 가리킴. 보통 가장 최근의 커밋을 가리킨다.
 - working directory는 `HEAD`가 가리키는 커밋에 따라 구성된다.
+
+## 브랜치(Branch)
+
+- `git branch` : 브랜치 조회하기
+- `git branch [브랜치 이름]` : 브랜치 생성
+- `git branch -d [브랜치 이름]` : 해당 브랜치 삭제하기
+- `git checkout [브랜치 이름]` : 해당 브랜치로 이동
+- `git checkout -b [브랜치 이름]` : 해당 브랜치를 생성하고 바로 이동 하기

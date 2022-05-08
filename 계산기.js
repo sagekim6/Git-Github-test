@@ -14,6 +14,7 @@ function multiply(a, b) {
   return a * b;
 }
 
+// 나눗셈(/)
 function divide(a, b) {
   return a / b;
 }
