@@ -100,5 +100,8 @@
 
 ## 브랜치(Branch)
 
+- `git branch` : 브랜치 조회하기
 - `git branch [브랜치 이름]` : 브랜치 생성
+- `git branch -d [브랜치 이름]` : 해당 브랜치 삭제하기
 - `git checkout [브랜치 이름]` : 해당 브랜치로 이동
+- `git checkout -b [브랜치 이름]` : 해당 브랜치를 생성하고 바로 이동 하기
