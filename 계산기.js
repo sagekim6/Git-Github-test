@@ -14,4 +14,8 @@ function multiply(a, b) {
   return a * b;
 }
 
+function divide(a, b) {
+  return a / b;
+}
+
 // git/github를 연습해보기 위한 test 파일

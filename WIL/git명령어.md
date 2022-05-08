@@ -18,6 +18,7 @@
 |              `git add .`               | 변경된 파일을 전부 staging area에 올린다       |
 |           `git add [파일명]`           | 해당 파일만을 staging area에 올린다            |
 |          `git reset [파일명]`          | staging area에서 해당 파일을 제거              |
+|    `git reset --hard [커밋 아이디]`    | 해당 커밋으로 이동하고 이전 커밋은 사라진다    |
 |              `git status`              | 현재 git의 상태 확인                           |
 |              `git commit`              | stage area에 있는 파일을 커밋                  |
 |      `git commit -m "커밋메세지"`      | 커밋 메세지와 동시에 커밋하기                  |
@@ -50,3 +51,21 @@
 1. 저장소의 <b>settings</b>에 들어간다.
 2. Access -> Collaborator 클릭
 3. Manage access에서 Add people을 해준다.
+
+## `git reset`에 관하여
+
+이럴때 사용:
+
+1. 과거 커밋으로 아예 돌아가고 싶을 때 : `HEAD`가 과거 커밋을 가리키고 working directory의 내부도 그 과거 커밋의 모습으로 바뀐다.
+2. staging area에 해당 파일을 지우고 싶을 때
+
+<b>옵션</b>
+
+- `HEAD`가 과거의 커밋을 가리키게 되는 결과는 git reset에서 어느 옵션을 쓰든 항상 똑같다.
+- 3가지 영역중 어느 영역까지 reset시킬건지 정할 수있다.
+
+|   옵션    |    Working Diretory     |      Staging Area       |         Repository          |
+| :-------: | :---------------------: | :---------------------: | :-------------------------: |
+| `--soft`  |         안 바뀜         |         안 바뀜         | `HEAD`가 해당 커밋을 가리킴 |
+| `--mixed` |         안 바뀜         | 해당 커밋 아이디로 바뀜 | `HEAD`가 해당 커밋을 가리킴 |
+| `--hard`  | 해당 커밋 아이디로 바뀜 | 해당 커밋 아이디로 바뀜 | `HEAD`가 해당 커밋을 가리킴 |
