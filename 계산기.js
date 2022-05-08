@@ -15,7 +15,7 @@ function multiply(a, b) {
 }
 
 // 나눗셈(/)
-function divide_premium(a, b) {
+function divide_new(a, b) {
   return a / b;
 }
 
