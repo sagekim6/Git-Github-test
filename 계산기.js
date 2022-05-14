@@ -19,4 +19,9 @@ function divide_free(a, b) {
   return a / b;
 }
 
+// 제곱
+function square(a) {
+  return a * a;
+}
+
 // git/github를 연습해보기 위한 test 파일
