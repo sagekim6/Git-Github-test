@@ -19,4 +19,8 @@ function divide_free(a, b) {
   return a / b;
 }
 
+function getPercent(a, b) {
+  return (a / b) * 100;
+}
+
 // git/github를 연습해보기 위한 test 파일
