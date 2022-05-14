@@ -12,24 +12,25 @@
 
 ## Git 명령어
 
-|                 명령어                 | 기능                                           |
-| :------------------------------------: | ---------------------------------------------- |
-|               `git init`               | 현재 지역 저장소에 초기화하기                  |
-|              `git add .`               | 변경된 파일을 전부 staging area에 올린다       |
-|           `git add [파일명]`           | 해당 파일만을 staging area에 올린다            |
-|          `git reset [파일명]`          | staging area에서 해당 파일을 제거              |
-|       `git reset [커밋 아이디]`        | 해당 커밋으로 이동                             |
-|              `git status`              | 현재 git의 상태 확인                           |
-|              `git commit`              | stage area에 있는 파일을 커밋                  |
-|      `git commit -m "커밋메세지"`      | 커밋 메세지와 동시에 커밋하기                  |
-|          `git commit --amend`          | 최신 커밋 수정하기 다시 새로운 커밋으로 만들기 |
-|        `git push origin master`        | origin master브랜치에 푸시                     |
-|         `git push origin main`         | origin main 브랜치에 푸시                      |
-|               `git pull`               | 원격 저장소의 내용을 로컬 저장소에 반영한다    |
-|       `git clone [저장소 주소]`        | 깃허브 프로젝트의 저장소를 그대로 복제         |
-|               `git log`                | 커밋 히스토리 보기                             |
-|        `git show [커밋 아이디]`        | 해당 커밋의 자세한 변경 사항 보기              |
-| `git diff [커밋 아이디] [커밋 아이디]` | 두 커밋 간의 변화 보기                         |
+|                 명령어                 | 기능                                                    |
+| :------------------------------------: | ------------------------------------------------------- |
+|               `git init`               | 현재 지역 저장소에 초기화하기                           |
+|              `git add .`               | 변경된 파일을 전부 staging area에 올린다                |
+|           `git add [파일명]`           | 해당 파일만을 staging area에 올린다                     |
+|          `git reset [파일명]`          | staging area에서 해당 파일을 제거                       |
+|       `git reset [커밋 아이디]`        | 해당 커밋으로 이동                                      |
+|              `git status`              | 현재 git의 상태 확인                                    |
+|              `git commit`              | stage area에 있는 파일을 커밋                           |
+|      `git commit -m "커밋메세지"`      | 커밋 메세지와 동시에 커밋하기                           |
+|          `git commit --amend`          | 최신 커밋 수정하기 다시 새로운 커밋으로 만들기          |
+|        `git push origin master`        | origin master브랜치에 푸시                              |
+|         `git push origin main`         | origin main 브랜치에 푸시                               |
+|               `git pull`               | 원격 저장소의 내용을 로컬 저장소에 반영한다             |
+|       `git clone [저장소 주소]`        | 깃허브 프로젝트의 저장소를 그대로 복제                  |
+|               `git log`                | 커밋 히스토리 보기                                      |
+|        `git show [커밋 아이디]`        | 해당 커밋의 자세한 변경 사항 보기                       |
+| `git diff [커밋 아이디] [커밋 아이디]` | 두 커밋 간의 변화 보기                                  |
+|       `git revert [커밋 아이디]`       | 해당 커밋에서 작성한 코드를 되돌리고 그걸 다시 커밋한다 |
 
 ## `vim`명령어
 
@@ -90,3 +91,9 @@
 - `git fetch`는 리모트 레포지토리에 있는 브랜치의 내용을 일단 가져와서 살펴본 후에 merge하고 싶을 때 사용한다.
   - `git fetch` 실행 후 `git diff`로 차이를 확인한 후 merge한다.  
     -> 즉, `git pull`은 `git fetch` + `merge`이다.
+
+## `git revert`
+
+- 해당 커밋에서 작성한 코드를 되돌리고 그걸 다시 커밋한다.
+- 여러개의 커밋을 취소할 수도 있다.
+  - `git revert [커밋 아이디1]..[커밋 아이디2]` : 커밋 아이디1은 포함되지 않고 다음 커밋 부터 커밋 아이디2까지 취소할 수 있다.
