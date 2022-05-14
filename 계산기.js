@@ -19,8 +19,4 @@ function divide_new(a, b) {
   return a / b;
 }
 
-function sayHello(){
-  console.log('Hello');
-}
-
 // git/github를 연습해보기 위한 test 파일
