@@ -87,4 +87,6 @@
 ## `git pull` VS `git fetch`
 
 - `git pull`은 리모트 레포지토리에 있는 커밋을 로컬로 가져와 바로 merge한다.
-- `git fetch`는 리모트 레포지토리에 있는 브랜치의 내용을 일단 가져와서 살펴본 후에 머지하고 싶을 때 사용한다.
+- `git fetch`는 리모트 레포지토리에 있는 브랜치의 내용을 일단 가져와서 살펴본 후에 merge하고 싶을 때 사용한다.
+  - `git fetch` 실행 후 `git diff`로 차이를 확인한 후 merge한다.  
+    -> 즉, `git pull`은 `git fetch` + `merge`이다.
